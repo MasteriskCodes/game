@@ -21,7 +21,8 @@ public class RoosterTest {
     public void testToString() {
         String expectedRoosterString = "Rooster " + BOB
                 + "\n" + "Favorite food: Manna Pro"
-                + "\n" + "Wingspan: 0.5m";
+                + "\n" + "Wingspan: 0.5m"
+                + "\n";
         assertEquals(expectedRoosterString, tested.toString());
     }
 }

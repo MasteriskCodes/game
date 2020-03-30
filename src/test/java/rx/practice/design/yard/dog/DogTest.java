@@ -34,7 +34,8 @@ public class DogTest {
                 .append("\n")
                 .append("Favorite food: Royal Canin")
                 .append("\n")
-                .append("Best friend for ever: Tom");
+                .append("Best friend for ever: Tom")
+                .append("\n");
         assertEquals(expected.toString(), tested.toString());
     }
 }
