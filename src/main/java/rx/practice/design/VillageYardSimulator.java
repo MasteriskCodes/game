@@ -37,6 +37,9 @@ public class VillageYardSimulator {
     }
     public static void main( String[] args )
     {
+        int days = 10;
+        if (args.length == 1)
+            days = Integer.parseInt(args[0]);
         SimulationExecutor executor = new SimulationExecutor(SimulationUtils.initializeAnimals());
         System.out.println("START-UP :)");
         executor.run(animals -> animals.forEach(System.out::println));
@@ -46,6 +49,6 @@ public class VillageYardSimulator {
         taskList.add(animals -> animals.forEach(animal -> AnimalSimulations.establishFriendshipAndPrintEvent(animal, new HashSet<Animal>(animals), SimulationUtils.randomAnimal)));
         taskList.add(animals -> System.out.println(TableUtils.getFriendMappingTable(animals)));
         VillageYardSimulator villageYardSimulator = new VillageYardSimulator(executor, taskList);
-        villageYardSimulator.simulate(20);
+        villageYardSimulator.simulate(days);
     }
 }

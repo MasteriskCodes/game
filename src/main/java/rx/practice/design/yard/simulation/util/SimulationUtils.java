@@ -71,7 +71,7 @@ public final class SimulationUtils {
         animals.add(chickenEmi);
         animals.add(chickenLua);
         //initialize rooster Bob
-        Animal roosterBob = new Rooster.Builder("Rooster", BirdFood.MANNA_PRO)
+        Animal roosterBob = new Rooster.Builder("Bob", BirdFood.MANNA_PRO)
                 .setWingSpan(new BigDecimal(BigInteger.valueOf(5), 1))
                 .build();
         animals.add(roosterBob);
